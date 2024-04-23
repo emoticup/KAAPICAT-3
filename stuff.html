@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Details</title>
+</head>
+<body>
+    <h1>Company Details</h1>
+    <div id="company-details"></div>
+
+    <script>
+        // Function to retrieve URL parameters
+        function getUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                email: params.get('email'),
+                demoStartDate: params.get('demoStartDate'),
+                demoEndDate: params.get('demoEndDate')
+            };
+        }
+
+        // Function to display company details
+        function displayCompanyDetails() {
+            const { email, demoStartDate, demoEndDate } = getUrlParams();
+            const companyDetailsDiv = document.getElementById('company-details');
+            companyDetailsDiv.innerHTML = `
+                <p>Email: ${email}</p>
+                <p>Demo Start Date: ${demoStartDate}</p>
+                <p>Demo End Date: ${demoEndDate}</p>
+            `;
+        }
+
+        // Call the displayCompanyDetails function when the page loads
+        window.onload = displayCompanyDetails;
+    </script>
+</body>
+</html>

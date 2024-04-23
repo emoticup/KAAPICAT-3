@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Demo Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="loginForm" onsubmit="return login()">
+        <img id="contact-logo" src="https://icon-library.com/images/windows-admin-icon/windows-admin-icon-16.jpg"alt="Contact Logo"
+            width="90">
+
+        <div class="form-row">
+            <label for="userId">Company Name</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-row">
+            <label for="password">Email</label>
+            <input type="Email" id="password" name="password" required>
+        </div>
+
+        <div class="form-row">
+            <label for="password">Demo Start Date</label>
+            <input type="Date" id="password" name="password" required>
+        </div>
+        <div class="form-row">
+            <label for="password">Demo End Date</label>
+            <input type="Date" id="password" name="password" required>
+        </div>
+        <a href="C:/Users/NPD EMC/Desktop/march 8/kraft2.html"><button>Proceed</button></a>
+
+    </form>
+    
+
+    <script>
+        function redirectToCompany() {
+            // You can add redirection logic here
+            alert("Redirecting to the demo registration page...");
+        }
+    </script>
+
+</body>
+</html>
